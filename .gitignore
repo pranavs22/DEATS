@@ -1,0 +1,11 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+Shiny/paula_test_dir/zfin_app/zfin_wt_expression.json
+
+App/files/zfin_wt_expression.json
+
+Warehouse
+
+**/*.pyc

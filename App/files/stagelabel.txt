@@ -1,0 +1,43 @@
+Zygote:1-cell
+Cleavage:2-cell
+Cleavage:4-cell
+Cleavage:8-cell
+Cleavage:16-cell
+Cleavage:32-cell
+Cleavage:64-cell
+Blastula:128-cell
+Blastula:256-cell
+Blastula:512-cell
+Blastula:1k-cell
+Blastula:High
+Blastula:Oblong
+Blastula:Sphere
+Blastula:Dome
+Blastula:30%-epiboly
+Gastrula:50%-epiboly
+Gastrula:Germ-ring
+Gastrula:Shield
+Gastrula:75%-epiboly
+Gastrula:90%-epiboly
+Gastrula:Bud
+Segmentation:1-4 somites
+Segmentation:5-9 somites
+Segmentation:10-13 somites
+Segmentation:14-19 somites
+Segmentation:20-25 somites
+Segmentation:26+ somites
+Pharyngula:Prim-5
+Pharyngula:Prim-15
+Pharyngula:Prim-25
+Pharyngula:High-pec
+Hatching:Long-pec
+Hatching:Pec-fin
+Larval:Protruding-mouth
+Larval:Day 4
+Larval:Day 5
+Larval:Day 6
+Larval:Days 7-13
+Larval:Days 14-20
+Larval:Days 21-29
+Juvenile:Days 30-44
+Juvenile:Days 45-89
