@@ -34,8 +34,8 @@ ui <- fluidPage(
     sidebarPanel(
 
       #DEATS GENERAL INFO
-      helpText("Welcome to the ZFIN DEATS Generator"),
-      helpText("Please consult our", a("github repo", href="https://github.com/pranavs22/DEATS"), "for questions and to see how DEATS works"),
+      helpText("Welcome to the ZFIN DEATS Web App"),
+      helpText("Please see our", a("github repo", href="https://github.com/pranavs22/DEATS"), "to learn more about DEATS"),
       hr(style = "border-color: #18BC9C;"),
 
       #DEV STAGE UI
