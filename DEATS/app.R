@@ -34,7 +34,7 @@ ui <- fluidPage(
     sidebarPanel(
 
       #DEATS GENERAL INFO
-      helpText("Welcome to the ZFIN DEATS Web App"),
+      helpText("Welcome to the DEATS RShiny Web App"),
       helpText("Please see our", a("github repo", href="https://github.com/pranavs22/DEATS"), "to learn more about DEATS"),
       hr(style = "border-color: #18BC9C;"),
 
