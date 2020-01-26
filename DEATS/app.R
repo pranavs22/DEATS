@@ -31,11 +31,11 @@ ui <- fluidPage(
             windowTitle = "DEATS: A Zebrafish Cell-Type Identification Tool"
         ),
   sidebarLayout(
-    sidebarPanel(
+    sidebarPanel(width = 4,
 
       #DEATS GENERAL INFO
       helpText("Welcome to the DEATS RShiny Web App"),
-      helpText("Please see our", a("github repo", href="https://github.com/pranavs22/DEATS"), "to learn more about DEATS"),
+      helpText("Please see our", a("github repo", href="https://github.com/pranavs22/DEATS"), "to learn more about the DEATS project"),
       hr(style = "border-color: #18BC9C;"),
 
       #DEV STAGE UI
@@ -48,8 +48,8 @@ ui <- fluidPage(
 
       #SINGLE DEG LIST UI
       helpText("2. Upload Single DEG List or Multiple DEG Lists", style ="color:#2C3F51;font-weight: bold;"),
-      helpText("A. Paste Single DEG List", style = "color:#2C3F51;font-weight: bold;padding-top:13px;padding-left:10px;"),
-      actionLink("example_single_deg_lst_link", label="Click here for an example DEG List", style = "color: #2C3F51;font-weight: bold;font-size: small;text-align: center;"),
+      helpText("A. Paste Single DEG List", style = "color:#2C3F51;font-weight: bold;padding-top:13px;"),
+      actionLink("example_single_deg_lst_link", label="Click here for an example Single DEG List", style = "color: #2C3F51;font-weight: bold;font-size: small;text-align: center;padding-left:10px;"),
       verbatimTextOutput("example_single_deg_lst"),
       textAreaInput("single_deg_lst",
                 label = NULL,
@@ -57,19 +57,21 @@ ui <- fluidPage(
                 placeholder = "e.g. ENSDARG00001\n\tENSDARG00002\n\tENSDARG00003 \n\tENSDARG00004 ..."),
 
       #MULTI DEG LISTS UI
-      helpText("B. Upload Multiple DEG Lists", style = "color:#2C3F51;font-weight:bold;padding-top:20px;padding-left:10px;"),
-      actionLink("example_multi_deg_lst_link", label="Click here to upload an example single cell RNA data file", style = "color: #2C3F51;font-weight: bold;font-size: small;text-align: center;t"),
+      helpText("B. Upload Multiple DEG Lists", style = "color:#2C3F51;font-weight:bold;padding-top:20px;"),
+      actionLink("example_multi_deg_lst_link", label="Click here to upload an example Multi DEG List", style = "color: #2C3F51;font-weight: bold;font-size: small;text-align: center;padding-left:10px;"),
       textOutput("loaded_example_multi_deg_lst_message"),
       fileInput("multi_deg_lsts",
                  label = NULL,
                  accept = c(".tsv"),
                  buttonLabel = "Upload"),
-       helpText("Choose PETE Score Filter", style ="color: #2C3F51;font-weight: bold;font-size: small;"),
+       helpText("Choose PETE Score Filter", style ="color: #2C3F51;font-weight: bold;font-size: small;padding-left:10px;"),
        textInput("pete",
                  label = NULL,
                  width = "60px",
                  placeholder = "0",
                  value = 0),
+      tags$style(type = 'text/css', '#pete {text-align: center;}'),
+      helpText("Information on the format required for Multiple DEG List uploads can be found", a("here", href="https://github.com/pranavs22/DEATS", style= "font-size: 12px;"), style= "font-size: 12px;text-align:center;padding-top:3px;padding-bottom:-5;"),
       hr(style = "border-color: #18BC9C;"),
 
       #GO!
@@ -77,7 +79,6 @@ ui <- fluidPage(
       textOutput("Messages"),
       textOutput("Messages2"),
       tags$style(type = 'text/css', '#loaded_example_multi_deg_lst_message {color: #2C3F51;font-weight: bold;font-size: small;text-align: right;}'),
-      tags$style(type = 'text/css', '#pete {text-align: right;}'),
       inlineCSS(list(".shiny-input-container" = "margin-bottom: 0px",
                "#multi_deg_lsts_progress" = "margin-bottom: 0px",
                ".checkbox" = "margin-top: 0px"))
