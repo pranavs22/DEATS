@@ -35,7 +35,7 @@ ui <- fluidPage(
 
       #DEATS GENERAL INFO
       helpText("Welcome to the ZFIN DEATS Generator"),
-      helpText("Please consult our", a("documentation", href="https://github.com/2019-bgmp/bgmp-group-project-scrnaseq_zebrafish/blob/master/Shiny/seve_master/zfin_app/README.md"), "for questions and to see how DEATS works"),
+      helpText("Please consult our", a("github repo", href="https://github.com/pranavs22/DEATS"), "for questions and to see how DEATS works"),
       hr(style = "border-color: #18BC9C;"),
 
       #DEV STAGE UI
