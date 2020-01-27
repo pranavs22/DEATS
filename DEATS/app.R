@@ -228,6 +228,9 @@ server <- function(input, output, session) {
           colnames(merged_tbl) <- c("Anatomy Term", "Count","p val")
           merged_tbl <- merged_tbl[order((merged_tbl$"Count"),decreasing = TRUE),]
 
+
+          merged_tbl$"p val" <- round(merged_tbl$"p val",5)###
+          # merged_tbl$"p val" <- format(round(merged_tbl$"p val",5), scientific=T)###
           #format(round(0.000538063809520502,5), scientific=T)
 
           # merged_tbl
@@ -373,6 +376,8 @@ server <- function(input, output, session) {
           colnames(merged_tbl) <- c("Anatomy Term", "Count","p val")
           merged_tbl <- merged_tbl[order((merged_tbl$"Count"),decreasing = TRUE),]
 
+          merged_tbl$"p val" <- round(merged_tbl$"p val",5)###
+          # merged_tbl$"p val" <- format(round(merged_tbl$"p val",5), scientific=T)###
           # format(round(0.000538063809520502,5), scientific=T)
 
           # merged_tbl
