@@ -48,7 +48,7 @@ ui <- fluidPage(
 
       #SINGLE DEG LIST UI
       helpText("2. Upload Single DEG List or Multiple DEG Lists", style ="color:#2C3F51;font-weight: bold;"),
-      helpText("A. Paste Single DEG List", style = "color:#2C3F51;font-weight: bold;padding-top:13px;"),
+      helpText("A. Paste in Single DEG List", style = "color:#2C3F51;font-weight: bold;padding-top:13px;"),
       actionLink("example_single_deg_lst_link", label="Click here for an example Single DEG List", style = "color: #2C3F51;font-weight: bold;font-size: small;text-align: center;padding-left:10px;"),
       verbatimTextOutput("example_single_deg_lst"),
       textAreaInput("single_deg_lst",
@@ -58,7 +58,7 @@ ui <- fluidPage(
 
       #MULTI DEG LISTS UI
       helpText("B. Upload Multiple DEG Lists", style = "color:#2C3F51;font-weight:bold;padding-top:20px;"),
-      actionLink("example_multi_deg_lst_link", label="Click here to upload an example Multi DEG List", style = "color: #2C3F51;font-weight: bold;font-size: small;text-align: center;padding-left:10px;"),
+      actionLink("example_multi_deg_lst_link", label="Click here to upload an example Multiple DEG List", style = "color: #2C3F51;font-weight: bold;font-size: small;text-align: center;padding-left:10px;"),
       textOutput("loaded_example_multi_deg_lst_message"),
       fileInput("multi_deg_lsts",
                  label = NULL,
