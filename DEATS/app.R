@@ -24,7 +24,7 @@ ui <- fluidPage(
   #HEADER & GENERAL UI
   theme = shinytheme("flatly"),
   a(href='https://zfin.org/',img(src='zfin_img.jpg',height='65',align = "left", style = "margin-top:25px;margin-left:60px;")),
-  titlePanel(h1("DEATS: A Zebrafish Cell-Type Identification Tool",
+  titlePanel(h1(img(src='zfin_fish.png', height='65', style = "padding-bottom:20px;"), "DEATS: A Zebrafish Cell-Type Identification Tool",
              align = "center",
              style = "color:#000000;padding-bottom:5px;margin-left:400px;margin-right:75px;font-family: Book Antigua;",
            ),
@@ -64,14 +64,14 @@ ui <- fluidPage(
                  label = NULL,
                  accept = c(".tsv"),
                  buttonLabel = "Upload"),
-       helpText("Choose PETE Score Filter", style ="color: #2C3F51;font-weight: bold;font-size: small;padding-left:10px;"),
+       # helpText("Choose PETE Score Filter", helpText("(details", a("here)", href="https://github.com/pranavs22/DEATS", style="font-size: 13px;"), style="font-weight:normal;font-size: 13px"), style ="color: #2C3F51;font-weight: bold;font-size: small;padding-left:10px;"),
        textInput("pete",
                  label = NULL,
                  width = "60px",
                  placeholder = "0",
                  value = 0),
       tags$style(type = 'text/css', '#pete {text-align: center;}'),
-      helpText("Information on the format required for Multiple DEG List uploads can be found", a("here", href="https://github.com/pranavs22/DEATS", style= "font-size: 12px;"), style= "font-size: 12px;text-align:center;padding-top:3px;padding-bottom:-5;"),
+      helpText("Information on PETE score and format required for Multiple DEG List uploads can be found", a("here", href="https://github.com/pranavs22/DEATS", style= "font-size: 13px;"), style= "font-size: 13px;text-align:center;padding-top:3px;padding-bottom:-5;"),
       hr(style = "border-color: #18BC9C;"),
 
       #GO!
