@@ -24,7 +24,7 @@ ui <- fluidPage(
   #HEADER & GENERAL UI
   theme = shinytheme("flatly"),
   a(href='https://zfin.org/',img(src='zfin_img.jpg',height='65',align = "left", style = "margin-top:25px;margin-left:60px;")),
-  titlePanel(h1(img(src='zfin_fish.png', height='65', style = "padding-bottom:20px;"), "DEATS: A Zebrafish Cell-Type Identification Tool",
+  titlePanel(h1(img(src='zfin_fish.png', height='65', style = "padding-bottom:20px;"), "DEATS: A Zebrafish Cell Type Identification Tool",
              align = "center",
              style = "color:#000000;padding-bottom:5px;margin-left:400px;margin-right:75px;font-family: Book Antigua;",
            ),
@@ -107,14 +107,16 @@ ui <- fluidPage(
               downloadButton("downloadData", "Download DEATS")),
 
             #DEATS TABLE UI
-            column(6,
-              tableOutput("DEATS_var"),
+            column(7,
+              # tableOutput("DEATS_var"),
+              dataTableOutput("DEATS_var"),
               textOutput("Messages3")),
 
             #GENE SYMBOLS UI
-            column(2,
+            column(1,
               useShinyjs(),
               actionButton('see_sym', 'See Gene Symbols'),
+              # tags$style(type = 'text/css', '#see_sym {float: right;}'),
               tableOutput("gene_sym"))
             )
           )
@@ -210,7 +212,7 @@ server <- function(input, output, session) {
         f_lst <- list.files("data/")
         f_lst <- sub(".tsv", "", f_lst, fixed = TRUE)
         updateSelectInput(session, "tsv_num", choices = sort(as.numeric(f_lst)))
-        output$DEATS_var <- renderTable({
+        output$DEATS_var <- renderDataTable({ ####renderDataTable
           data_tbl <- read.csv("data/data.tsv", check.names=FALSE, header = FALSE, col.names = c("anatomy.term", "Count"))
           dist_tbl <- read.csv("stats/dist.tsv", col.names = c("anatomy.term", "Count"))
           merged_tbl <- merge(dist_tbl,data_tbl, by = "anatomy.term")
@@ -225,11 +227,15 @@ server <- function(input, output, session) {
           merged_tbl <- merged_tbl[,c(1,4,6)]
           colnames(merged_tbl) <- c("Anatomy Term", "Count","p val")
           merged_tbl <- merged_tbl[order((merged_tbl$"Count"),decreasing = TRUE),]
+
+          #format(round(0.000538063809520502,5), scientific=T)
+
           # merged_tbl
           validate(
                   need(nrow(merged_tbl) > 0, "With these filters there is no data to show")
                          )
-          merged_tbl
+          # merged_tbl
+          datatable(merged_tbl,rownames = FALSE)
         })
       })
 
@@ -351,7 +357,7 @@ server <- function(input, output, session) {
         f_lst <- list.files("data/")
         f_lst <- sub(".tsv", "", f_lst, fixed = TRUE)
         updateSelectInput(session, "tsv_num", choices = sort(as.numeric(f_lst)))
-        output$DEATS_var <- renderTable({
+        output$DEATS_var <- renderDataTable({####renderTable
           data_tbl <- read.csv(paste0("data/",input$tsv_num,".tsv"), check.names=FALSE, header = FALSE, col.names = c("anatomy.term", "Count"))
           dist_tbl <- read.csv("stats/dist.tsv", col.names = c("anatomy.term", "Count"))
           merged_tbl <- merge(dist_tbl,data_tbl, by = "anatomy.term")
@@ -366,11 +372,15 @@ server <- function(input, output, session) {
           merged_tbl <- merged_tbl[,c(1,4,6)]
           colnames(merged_tbl) <- c("Anatomy Term", "Count","p val")
           merged_tbl <- merged_tbl[order((merged_tbl$"Count"),decreasing = TRUE),]
+
+          # format(round(0.000538063809520502,5), scientific=T)
+
           # merged_tbl
           validate(
                   need(nrow(merged_tbl) > 0, "With these filters there is no data to show")
                          )
-          merged_tbl
+          # merged_tbl
+          datatable(merged_tbl,rownames = FALSE)
         })
       })
 
