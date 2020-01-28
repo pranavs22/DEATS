@@ -115,8 +115,7 @@ ui <- fluidPage(
             #GENE SYMBOLS UI
             column(1,
               useShinyjs(),
-              actionButton('see_sym', 'See Gene Symbols'),
-              # tags$style(type = 'text/css', '#see_sym {float: right;}'),
+              actionButton('see_sym', 'See Gene Symbols',style='padding:10px;font-size:95%;'),
               tableOutput("gene_sym"))
             )
           )
