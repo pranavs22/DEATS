@@ -17,4 +17,4 @@ DEATS tables were envisioned by the ZFIN organization as a method for labeling u
 This program uses the published anatomical locations of a gene's expression and a list of Differentially Expressed Genes for a Cell-Type to create a Differentially Expressed Anatomy Terms Sheet (DEATS). DEATS can be used to annotate one or multiple zebrafish cell-types.
 
 #### To know more about the tool, please refer to the user-manual document in this repository 
-#### Link - [Documentation]
+#### Link - [Documentation] (https://github.com/pranavs22/DEATS/blob/master/DEATS-%20User%20Manual.pdf)
