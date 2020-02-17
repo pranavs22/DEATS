@@ -26,7 +26,7 @@ ui <- fluidPage(
   a(href='https://zfin.org/',img(src='zfin_img.jpg',height='65',align = "left", style = "margin-top:25px;margin-left:60px;")),
   titlePanel(h1(img(src='zfin_fish.png', height='65', style = "padding-bottom:20px;"), "DEATS: A Zebrafish Cell Type Identification Tool",
              align = "center",
-             style = "color:#000000;padding-bottom:5px;margin-left:400px;margin-right:75px;font-family: Book Antigua;",
+             style = "color:#000000;padding-bottom:5px;margin-left:400px;margin-right:75px;font-family: Book Antigua;"
            ),
             windowTitle = "DEATS: A Zebrafish Cell-Type Identification Tool"
         ),
@@ -117,6 +117,7 @@ ui <- fluidPage(
               useShinyjs(),
               actionButton('see_sym', 'See Gene Symbols',style='padding:10px;font-size:95%;'),
               tableOutput("gene_sym"))
+            
             )
           )
         )
