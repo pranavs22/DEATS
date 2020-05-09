@@ -2,18 +2,18 @@
 ## ZFIN Differential Expressed Anatomy Terms Sheet Generator
 
 ## Overview
-This program, DEATS, uses the published anatomical locations of a gene's expression as annotated by ZFIN (zANAT) and a set of Differentially Expressed Genes for a Cell-Type (DEG) to create an Differentially Expressed Anatomy Terms Sheet (DEATS). DEATS can be used to annotate a *single* or *multiple* zebrafish cell-types.
+This program, DEATS, uses the published anatomical locations of a gene's expression as annotated by ZFIN (zANAT) and a list of Differentially Expressed Genes for a Cell-Type (DEG/DEGs) to create an Differentially Expressed Anatomy Terms Sheet (DEATS). DEATS can be used to annotate one or multiple zebrafish cell-types.
 
 ## File Structure
 The structure of this app is as follows:
 
 **Source Code**
-- The 'main.py' file runs the computation (i.e. parses zfin data, creates deats table and creats the deats frequency table)
+- The 'main.py' file runs the computation (i.e. parses zfin data and creats the deats frequency table)
 - The 'app.R' file a) has the UI code, b) takes in the DEG, and c) contains the code used to pass information to and from the 'main.py' file
 
 **Directories**
-- The 'files' directory has the logic operator files for the app.R code, the single 's_deg.csv' or multi 'm_deg.csv' file downloaded from the user in the app.R script, and the files for the 'main.py' (the zfin json, the zfa & bspo ids, the stagelabels id, the multi deg example set and the single deg example set)
 - The 'data' directory contains the DEATS output (CSV files with the zANAT and its frequency count) 
+- The 'files' directory has the logic operator files for the app.R code, the single 's_deg.csv' or multi 'm_deg.csv' file downloaded from the user in the app.R script, and the files for the 'main.py' (the zfin json, the zfa & bspo ids, the stagelabels id)
 - The 'meta_data' directory has the meta_data from the 'main.py' script. This data has the gene symbols and the ensdargs
 - The 'sym_data' directory has the same thing as 'meta_data'. To make this directory meta_data is duplicated in the app.R script.(This action is taken because the information in 'sym_data' remains static while the information in 'meta_data' is subject to renaming.)
 - The 'stats' directory has the term frequency counts for all of the zfin data (i.e. data from the JSON file)

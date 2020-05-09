@@ -1,0 +1,161 @@
+{
+  "metaData" : {
+    "dateProduced" : "2019-11-12T07:40:42.128-08:00",
+    "dataProvider" : {
+      "crossReference" : {
+        "id" : "ZFIN",
+        "pages" : [ "homepage" ]
+      },
+      "type" : "curated"
+    }
+  },
+  "data" : [ {
+    "dateAssigned" : "2019-11-12T07:37:18.149-08:00",
+    "geneId" : "ZFIN:ZDB-GENE-030131-8415",
+    "evidence" : {
+      "publicationId" : "PMID:21191402",
+      "crossReference" : {
+        "id" : "ZFIN:ZDB-PUB-110103-29",
+        "pages" : [ "reference" ]
+      }
+    },
+    "crossReference" : {
+      "id" : "ZFIN:ZDB-FIG-120404-1",
+      "pages" : [ "gene/expression/annotation/detail" ]
+    },
+    "assay" : "MMO:0000655",
+    "whenExpressed" : {
+      "stageName" : "Larval:Days 7-13",
+      "stageTermId" : "ZFS:0000039",
+      "stageUberonSlimTerm" : {
+        "uberonTerm" : "post embryonic, pre-adult"
+      }
+    },
+    "whereExpressed" : {
+      "whereExpressedStatement" : "dermis",
+      "anatomicalStructureTermId" : "ZFA:0001119",
+      "anatomicalStructureUberonSlimTermIds" : [ {
+        "uberonTerm" : "UBERON:0002416"
+      } ]
+    },
+    "assayName" : "reverse transcription polymerase chain reaction assay",
+    "ensemblCrossReferences" : [ {
+      "id" : "ENSEMBL:ENSDARG00000022670",
+      "pages" : [ ]
+    } ],
+    "generatedGeneDescription" : "Predicted to have extracellular matrix structural constituent. Involved in response to mechanical stimulus and skeletal system development. Predicted to localize to the collagen type I trimer and extracellular space. Used to study Ehlers-Danlos syndrome and osteogenesis imperfecta. Human ortholog(s) of this gene implicated in Ehlers-Danlos syndrome; heart valve disease; intracranial aneurysm; osteogenesis imperfecta (multiple); and osteoporosis. Is expressed in several structures, including cranium; integument; myoseptum; osteoblast; and pectoral fin. Orthologous to human COL1A2 (collagen type I alpha 2 chain).",
+    "geneName" : "collagen, type I, alpha 2",
+    "geneSymbol" : "col1a2"
+  }, {
+    "dateAssigned" : "2019-11-12T07:37:18.152-08:00",
+    "geneId" : "ZFIN:ZDB-GENE-060810-134",
+    "evidence" : {
+      "publicationId" : "ZFIN:ZDB-PUB-040907-1"
+    },
+    "crossReference" : {
+      "id" : "ZFIN:ZDB-FIG-060810-2495",
+      "pages" : [ "gene/expression/annotation/detail" ]
+    },
+    "assay" : "MMO:0000658",
+    "whenExpressed" : {
+      "stageName" : "Segmentation:1-4 somites",
+      "stageTermId" : "ZFS:0000023",
+      "stageUberonSlimTerm" : {
+        "uberonTerm" : "UBERON:0000068"
+      }
+    },
+    "whereExpressed" : {
+      "whereExpressedStatement" : "midbrain neural keel",
+      "anatomicalStructureTermId" : "ZFA:0007025",
+      "anatomicalStructureUberonSlimTermIds" : [ {
+        "uberonTerm" : "Other"
+      } ]
+    },
+    "assayName" : "ribonucleic acid in situ hybridization assay",
+    "ensemblCrossReferences" : [ ],
+    "generatedGeneDescription" : "Is expressed in central nervous system; midbrain neural keel; and neural plate.",
+    "geneName" : "im:7159260",
+    "geneSymbol" : "im:7159260"
+  }, {
+    "dateAssigned" : "2019-11-12T07:37:18.152-08:00",
+    "geneId" : "ZFIN:ZDB-GENE-060208-1",
+    "evidence" : {
+      "publicationId" : "PMID:22523578",
+      "crossReference" : {
+        "id" : "ZFIN:ZDB-PUB-120424-31",
+        "pages" : [ "reference" ]
+      }
+    },
+    "crossReference" : {
+      "id" : "ZFIN:ZDB-FIG-120426-23",
+      "pages" : [ "gene/expression/annotation/detail" ]
+    },
+    "assay" : "MMO:0000658",
+    "whenExpressed" : {
+      "stageName" : "Adult",
+      "stageTermId" : "ZFS:0000044",
+      "stageUberonSlimTerm" : {
+        "uberonTerm" : "UBERON:0000113"
+      }
+    },
+    "whereExpressed" : {
+      "whereExpressedStatement" : "retinal inner nuclear layer medial region",
+      "anatomicalStructureTermId" : "ZFA:0000119",
+      "anatomicalStructureQualifierTermId" : "BSPO:0000083",
+      "anatomicalStructureUberonSlimTermIds" : [ {
+        "uberonTerm" : "UBERON:0002104"
+      }, {
+        "uberonTerm" : "UBERON:0001016"
+      }, {
+        "uberonTerm" : "UBERON:0001032"
+      } ]
+    },
+    "assayName" : "ribonucleic acid in situ hybridization assay",
+    "ensemblCrossReferences" : [ {
+      "id" : "ENSEMBL:ENSDARG00000017742",
+      "pages" : [ ]
+    } ],
+    "generatedGeneDescription" : "Predicted to have group III metabotropic glutamate receptor activity. Predicted to be involved in adenylate cyclase-inhibiting G protein-coupled glutamate receptor signaling pathway and regulation of glutamatergic synaptic transmission. Predicted to localize to the integral component of plasma membrane and presynaptic membrane. Human ortholog(s) of this gene implicated in congenital stationary night blindness 1B. Is expressed in brain and retinal neural layer. Orthologous to human GRM6 (glutamate metabotropic receptor 6).",
+    "geneName" : "glutamate receptor, metabotropic 6a",
+    "geneSymbol" : "grm6a"
+  }, {
+    "dateAssigned" : "2019-11-12T07:37:19.438-08:00",
+    "geneId" : "ZFIN:ZDB-GENE-040923-2",
+    "evidence" : {
+      "publicationId" : "PMID:19007914",
+      "crossReference" : {
+        "id" : "ZFIN:ZDB-PUB-081121-5",
+        "pages" : [ "reference" ]
+      }
+    },
+    "crossReference" : {
+      "id" : "ZFIN:ZDB-FIG-090220-34",
+      "pages" : [ "gene/expression/annotation/detail" ]
+    },
+    "assay" : "MMO:0000658",
+    "whenExpressed" : {
+      "stageName" : "Segmentation:14-19 somites",
+      "stageTermId" : "ZFS:0000026",
+      "stageUberonSlimTerm" : {
+        "uberonTerm" : "UBERON:0000068"
+      }
+    },
+    "whereExpressed" : {
+      "whereExpressedStatement" : "adaxial cell",
+      "anatomicalStructureTermId" : "ZFA:0000003",
+      "anatomicalStructureUberonSlimTermIds" : [ {
+        "uberonTerm" : "UBERON:0003104"
+      }, {
+        "uberonTerm" : "UBERON:0000926"
+      } ]
+    },
+    "assayName" : "ribonucleic acid in situ hybridization assay",
+    "ensemblCrossReferences" : [ {
+      "id" : "ENSEMBL:ENSDARG00000021184",
+      "pages" : [ ]
+    } ],
+    "generatedGeneDescription" : "Exhibits RNA binding activity. Involved in several processes, including RNA splicing; muscle fiber development; and regulation of RNA splicing. Localizes to the nucleus. Is expressed in several structures, including cardiovascular system; fin bud; musculature system; paraxial mesoderm; and skeletal muscle satellite cell.",
+    "geneName" : "RNA binding fox-1 homolog 1, like",
+    "geneSymbol" : "rbfox1l"
+  } ]
+}

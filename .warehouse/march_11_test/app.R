@@ -1,5 +1,8 @@
 #!/usr/bin/env Rscript
 
+#NOTES:
+#1. NEED TO WRITE OUT DATA AND METADATA AS TSV NOT CSV
+
 library(shiny)
 library(DT)
 library(gridExtra)
@@ -117,7 +120,7 @@ ui <- fluidPage(
               useShinyjs(),
               actionButton('see_sym', 'See Gene Symbols',style='padding:10px;font-size:95%;'),
               tableOutput("gene_sym"))
-            
+
             )
           )
         )
@@ -418,7 +421,6 @@ server <- function(input, output, session) {
       )
     }
 })
-
 }
 
 # Run the app ----
