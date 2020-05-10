@@ -8,8 +8,10 @@ This program, DEATS, uses the published anatomical locations of a gene's express
 The structure of this app is as follows:
 
 **Source Code**
-- The 'main.py' file runs the computation (i.e. parses zfin data, creates deats table and creats the deats frequency table)
 - The 'app.R' file a) has the UI code, b) takes in the DEG, and c) contains the code used to pass information to and from the 'main.py' file
+- The 'main.py' file runs the computation (i.e. links together the 'zfin_ftns.py' & the 'deats_ftns,py' files)
+- The 'zfin_ftns.py' file has the functions to parse the zfin-data file
+- The 'deats_ftns.py' file has the functions to create the deats table
 
 **Directories**
 - The 'files' directory has the logic operator files for the app.R code, the single 's_deg.csv' or multi 'm_deg.csv' file downloaded from the user in the app.R script, and the files for the 'main.py' (the zfin json, the zfa & bspo ids, the stagelabels id, the multi deg example set and the single deg example set)
